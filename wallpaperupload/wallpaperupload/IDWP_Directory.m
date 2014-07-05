@@ -10,6 +10,10 @@
 
 @implementation IDWP_Directory
 
++ (IDWP_Directory*) directory {
+    return [[self alloc] init];
+}
+
 - (NSMutableArray *) enumerateImageFiles: (id) directoryPath {
     NSURL * directoryUrl = [NSURL URLWithString:directoryPath];
     
@@ -20,8 +24,7 @@
         return nil;
     }
     
-    NSMutableArray * fileArray;
-    
+    NSMutableArray * fileArray = [[NSMutableArray alloc] init];
     NSFileManager * fileManager = [[NSFileManager alloc] init];
     NSArray * keys = [NSArray arrayWithObject:NSURLIsDirectoryKey];
     
@@ -45,10 +48,11 @@
             // No error and it’s not a directory; do something with the file
             IDWP_File* aFile = [IDWP_File initializeWithPath: url];
             [fileArray addObject:aFile];
-            NSLog([url absoluteString]);
         }
     }
-    
+    //[fileArray autorelease];
+    NSLog(@"%lu", (unsigned long)[fileArray count]);
+
     return fileArray;
 };
 

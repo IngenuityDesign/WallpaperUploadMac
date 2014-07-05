@@ -16,6 +16,7 @@
 - (id) init;
 - (void) dealloc;
 
-- (IDWP_File*) enumerateImageFiles: (NSString *) directoryPath;
++ (IDWP_Directory*) directory;
+- (NSMutableArray*) enumerateImageFiles: (NSString *) directoryPath;
 
 @end

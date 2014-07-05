@@ -15,8 +15,14 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    IDWP_Directory * directory = [[IDWP_Directory alloc] init];
-    IDWP_File * files = [directory enumerateImageFiles:@"/Users/stephen/Documents"];
+    IDWP_Directory * directory = [IDWP_Directory directory];
+    NSMutableArray * files = [directory enumerateImageFiles:@"/Users/stephen/Pictures"];
+    
+    id item;
+    
+    for (item in files) {
+        NSLog(@"%@", item);
+    }
     
 }
 

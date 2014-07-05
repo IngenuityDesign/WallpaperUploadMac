@@ -16,6 +16,20 @@
            readwrite
            ) NSURL* filepath;
 
+@property NSString * month;
+@property NSString * year;
+@property NSString * type;
+@property NSString * subtype;
+@property NSString * width;
+@property NSString * height;
+
+@property NSString * filename;
+@property NSString * extension;
+
+
++ (IDWP_File*) file;
 + (IDWP_File*) initializeWithPath: (NSURL*) filePath;
+
+- (void) parseFilename;
 
 @end
