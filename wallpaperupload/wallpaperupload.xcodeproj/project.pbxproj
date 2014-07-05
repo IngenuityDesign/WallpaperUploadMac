@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCAA764919679DDC00887F05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAA764819679DDC00887F05 /* Cocoa.framework */; };
+		DCAA765319679DDC00887F05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCAA765119679DDC00887F05 /* InfoPlist.strings */; };
+		DCAA765519679DDC00887F05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA765419679DDC00887F05 /* main.m */; };
+		DCAA765919679DDC00887F05 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DCAA765719679DDC00887F05 /* Credits.rtf */; };
+		DCAA765C19679DDC00887F05 /* IDWP_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA765B19679DDC00887F05 /* IDWP_AppDelegate.m */; };
+		DCAA765F19679DDC00887F05 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAA765D19679DDC00887F05 /* MainMenu.xib */; };
+		DCAA766119679DDC00887F05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAA766019679DDC00887F05 /* Images.xcassets */; };
+		DCAA766819679DDC00887F05 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAA766719679DDC00887F05 /* XCTest.framework */; };
+		DCAA766919679DDC00887F05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAA764819679DDC00887F05 /* Cocoa.framework */; };
+		DCAA767119679DDC00887F05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCAA766F19679DDC00887F05 /* InfoPlist.strings */; };
+		DCAA767319679DDC00887F05 /* wallpaperuploadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA767219679DDC00887F05 /* wallpaperuploadTests.m */; };
+		DCAA767F19679EE800887F05 /* IDWP_File.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA767E19679EE800887F05 /* IDWP_File.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCAA766A19679DDC00887F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCAA763D19679DDB00887F05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAA764419679DDC00887F05;
+			remoteInfo = wallpaperupload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCAA764519679DDC00887F05 /* wallpaperupload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallpaperupload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAA764819679DDC00887F05 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DCAA764B19679DDC00887F05 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DCAA764C19679DDC00887F05 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DCAA764D19679DDC00887F05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCAA765019679DDC00887F05 /* wallpaperupload-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wallpaperupload-Info.plist"; sourceTree = "<group>"; };
+		DCAA765219679DDC00887F05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCAA765419679DDC00887F05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCAA765619679DDC00887F05 /* wallpaperupload-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wallpaperupload-Prefix.pch"; sourceTree = "<group>"; };
+		DCAA765819679DDC00887F05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DCAA765A19679DDC00887F05 /* IDWP_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDWP_AppDelegate.h; sourceTree = "<group>"; };
+		DCAA765B19679DDC00887F05 /* IDWP_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDWP_AppDelegate.m; sourceTree = "<group>"; };
+		DCAA765E19679DDC00887F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DCAA766019679DDC00887F05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCAA766619679DDC00887F05 /* wallpaperuploadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wallpaperuploadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAA766719679DDC00887F05 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DCAA766E19679DDC00887F05 /* wallpaperuploadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wallpaperuploadTests-Info.plist"; sourceTree = "<group>"; };
+		DCAA767019679DDC00887F05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCAA767219679DDC00887F05 /* wallpaperuploadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wallpaperuploadTests.m; sourceTree = "<group>"; };
+		DCAA767D19679EE800887F05 /* IDWP_File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDWP_File.h; sourceTree = "<group>"; };
+		DCAA767E19679EE800887F05 /* IDWP_File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_File.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCAA764219679DDC00887F05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAA764919679DDC00887F05 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAA766319679DDC00887F05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAA766919679DDC00887F05 /* Cocoa.framework in Frameworks */,
+				DCAA766819679DDC00887F05 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCAA763C19679DDB00887F05 = {
+			isa = PBXGroup;
+			children = (
+				DCAA764E19679DDC00887F05 /* wallpaperupload */,
+				DCAA766C19679DDC00887F05 /* wallpaperuploadTests */,
+				DCAA764719679DDC00887F05 /* Frameworks */,
+				DCAA764619679DDC00887F05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCAA764619679DDC00887F05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA764519679DDC00887F05 /* wallpaperupload.app */,
+				DCAA766619679DDC00887F05 /* wallpaperuploadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCAA764719679DDC00887F05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA764819679DDC00887F05 /* Cocoa.framework */,
+				DCAA766719679DDC00887F05 /* XCTest.framework */,
+				DCAA764A19679DDC00887F05 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCAA764A19679DDC00887F05 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA764B19679DDC00887F05 /* AppKit.framework */,
+				DCAA764C19679DDC00887F05 /* CoreData.framework */,
+				DCAA764D19679DDC00887F05 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DCAA764E19679DDC00887F05 /* wallpaperupload */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA767C19679E2500887F05 /* Filesystem */,
+				DCAA765A19679DDC00887F05 /* IDWP_AppDelegate.h */,
+				DCAA765B19679DDC00887F05 /* IDWP_AppDelegate.m */,
+				DCAA765D19679DDC00887F05 /* MainMenu.xib */,
+				DCAA766019679DDC00887F05 /* Images.xcassets */,
+				DCAA764F19679DDC00887F05 /* Supporting Files */,
+			);
+			path = wallpaperupload;
+			sourceTree = "<group>";
+		};
+		DCAA764F19679DDC00887F05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA765019679DDC00887F05 /* wallpaperupload-Info.plist */,
+				DCAA765119679DDC00887F05 /* InfoPlist.strings */,
+				DCAA765419679DDC00887F05 /* main.m */,
+				DCAA765619679DDC00887F05 /* wallpaperupload-Prefix.pch */,
+				DCAA765719679DDC00887F05 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCAA766C19679DDC00887F05 /* wallpaperuploadTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA767219679DDC00887F05 /* wallpaperuploadTests.m */,
+				DCAA766D19679DDC00887F05 /* Supporting Files */,
+			);
+			path = wallpaperuploadTests;
+			sourceTree = "<group>";
+		};
+		DCAA766D19679DDC00887F05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA766E19679DDC00887F05 /* wallpaperuploadTests-Info.plist */,
+				DCAA766F19679DDC00887F05 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCAA767C19679E2500887F05 /* Filesystem */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA767D19679EE800887F05 /* IDWP_File.h */,
+				DCAA767E19679EE800887F05 /* IDWP_File.m */,
+			);
+			name = Filesystem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCAA764419679DDC00887F05 /* wallpaperupload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAA767619679DDC00887F05 /* Build configuration list for PBXNativeTarget "wallpaperupload" */;
+			buildPhases = (
+				DCAA764119679DDC00887F05 /* Sources */,
+				DCAA764219679DDC00887F05 /* Frameworks */,
+				DCAA764319679DDC00887F05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wallpaperupload;
+			productName = wallpaperupload;
+			productReference = DCAA764519679DDC00887F05 /* wallpaperupload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCAA766519679DDC00887F05 /* wallpaperuploadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAA767919679DDC00887F05 /* Build configuration list for PBXNativeTarget "wallpaperuploadTests" */;
+			buildPhases = (
+				DCAA766219679DDC00887F05 /* Sources */,
+				DCAA766319679DDC00887F05 /* Frameworks */,
+				DCAA766419679DDC00887F05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAA766B19679DDC00887F05 /* PBXTargetDependency */,
+			);
+			name = wallpaperuploadTests;
+			productName = wallpaperuploadTests;
+			productReference = DCAA766619679DDC00887F05 /* wallpaperuploadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCAA763D19679DDB00887F05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IDWP_;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ingenuity Design";
+				TargetAttributes = {
+					DCAA766519679DDC00887F05 = {
+						TestTargetID = DCAA764419679DDC00887F05;
+					};
+				};
+			};
+			buildConfigurationList = DCAA764019679DDB00887F05 /* Build configuration list for PBXProject "wallpaperupload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCAA763C19679DDB00887F05;
+			productRefGroup = DCAA764619679DDC00887F05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCAA764419679DDC00887F05 /* wallpaperupload */,
+				DCAA766519679DDC00887F05 /* wallpaperuploadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCAA764319679DDC00887F05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAA765319679DDC00887F05 /* InfoPlist.strings in Resources */,
+				DCAA766119679DDC00887F05 /* Images.xcassets in Resources */,
+				DCAA765919679DDC00887F05 /* Credits.rtf in Resources */,
+				DCAA765F19679DDC00887F05 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAA766419679DDC00887F05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAA767119679DDC00887F05 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCAA764119679DDC00887F05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAA765C19679DDC00887F05 /* IDWP_AppDelegate.m in Sources */,
+				DCAA767F19679EE800887F05 /* IDWP_File.m in Sources */,
+				DCAA765519679DDC00887F05 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAA766219679DDC00887F05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAA767319679DDC00887F05 /* wallpaperuploadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCAA766B19679DDC00887F05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAA764419679DDC00887F05 /* wallpaperupload */;
+			targetProxy = DCAA766A19679DDC00887F05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCAA765119679DDC00887F05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAA765219679DDC00887F05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCAA765719679DDC00887F05 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAA765819679DDC00887F05 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DCAA765D19679DDC00887F05 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAA765E19679DDC00887F05 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DCAA766F19679DDC00887F05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAA767019679DDC00887F05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCAA767419679DDC00887F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DCAA767519679DDC00887F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DCAA767719679DDC00887F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wallpaperupload/wallpaperupload-Prefix.pch";
+				INFOPLIST_FILE = "wallpaperupload/wallpaperupload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCAA767819679DDC00887F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wallpaperupload/wallpaperupload-Prefix.pch";
+				INFOPLIST_FILE = "wallpaperupload/wallpaperupload-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCAA767A19679DDC00887F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wallpaperupload.app/Contents/MacOS/wallpaperupload";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wallpaperupload/wallpaperupload-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "wallpaperuploadTests/wallpaperuploadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DCAA767B19679DDC00887F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wallpaperupload.app/Contents/MacOS/wallpaperupload";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wallpaperupload/wallpaperupload-Prefix.pch";
+				INFOPLIST_FILE = "wallpaperuploadTests/wallpaperuploadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCAA764019679DDB00887F05 /* Build configuration list for PBXProject "wallpaperupload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAA767419679DDC00887F05 /* Debug */,
+				DCAA767519679DDC00887F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAA767619679DDC00887F05 /* Build configuration list for PBXNativeTarget "wallpaperupload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAA767719679DDC00887F05 /* Debug */,
+				DCAA767819679DDC00887F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCAA767919679DDC00887F05 /* Build configuration list for PBXNativeTarget "wallpaperuploadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAA767A19679DDC00887F05 /* Debug */,
+				DCAA767B19679DDC00887F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCAA763D19679DDB00887F05 /* Project object */;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>818AB159-EDE0-4885-AA05-BD069D16F27C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>wallpaperupload</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E74B28AB-3844-4798-80FB-67062962C75B</key>
+		<string>ssh://github.com/IngenuityDesign/WallpaperUploadMac.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>wallpaperupload/wallpaperupload.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E74B28AB-3844-4798-80FB-67062962C75B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/IngenuityDesign/WallpaperUploadMac.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E74B28AB-3844-4798-80FB-67062962C75B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E74B28AB-3844-4798-80FB-67062962C75B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WallpaperUploadMac</string>
+		</dict>
+	</array>
+</dict>
+</plist>
