@@ -31,5 +31,7 @@
 + (IDWP_File*) initializeWithPath: (NSURL*) filePath;
 
 - (void) parseFilename;
+- (BOOL) isJPG;
+- (BOOL) isValidWallpaper;
 
 @end

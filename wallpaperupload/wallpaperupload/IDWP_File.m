@@ -50,18 +50,61 @@
     
 }
 
+- (BOOL) isValidWallpaper {
+    if (![self isJPG]) return NO;
+    if (![self month] && [self height]) return NO;
+    return YES;
+    
+}
+
+- (BOOL) isJPG {
+    if (
+        [[self extension] caseInsensitiveCompare:@"jpg"] == NSOrderedSame ||
+        [[self extension] caseInsensitiveCompare:@"jpeg"] == NSOrderedSame
+        )
+    {
+        return YES;
+    }
+    return NO;
+}
+
 - (void) parseFilename {
     
-    /*
-    NSError *error = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"(?P<month>[a-z]+)(?P<year>[0-9]{2,4})_(?P<type>[^_]+)_(?P<subtype>[^_]+)_(?P<width>[0-9]{3,4})x(?P<height>[0-9]{3,4})"
-                                                                           options:NSRegularExpressionCaseInsensitivez
-                                                                             error:&error];
-    */
     NSString* tempPath = [[self getFilepath] absoluteString];
     [self setFilename:[tempPath lastPathComponent]];
     [self setExtension:[tempPath pathExtension]];
+    
+    if ([self isJPG]) {
         
+
+        //NSString *searchedString = [[self filename] stringByDeletingPathExtension];
+        NSString *searchedString = @"July2014_blue_simple_1366x768";
+        NSRange searchedRange = NSMakeRange(0, [searchedString length]);
+        NSString *pattern = @"([a-zA-Z]+)([0-9]{2,4})_([^_]+)_([^_]+)_([0-9]{3,4})x([0-9]{3,4})";
+        NSError *error = nil;
+        
+        NSRegularExpression* regex = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
+        
+        if (error == nil) {
+            NSTextCheckingResult *match = [regex firstMatchInString:searchedString options:0 range: searchedRange];
+            [self setMonth:[searchedString substringWithRange:[match rangeAtIndex:1]]];
+            [self setYear:[searchedString substringWithRange:[match rangeAtIndex:2]]];
+            
+            
+            [self setType:[searchedString substringWithRange:[match rangeAtIndex:3]]];
+            [self setSubtype:[searchedString substringWithRange:[match rangeAtIndex:4]]];
+             
+             
+            [self setWidth:[searchedString substringWithRange:[match rangeAtIndex:5]]];
+            [self setHeight:[searchedString substringWithRange:[match rangeAtIndex:6]]];
+            
+        } else {
+            NSLog(@"File is not named properly");
+        }
+
+            
+    }
+    
 }
 
 @end

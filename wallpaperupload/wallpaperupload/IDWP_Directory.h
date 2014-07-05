@@ -12,11 +12,13 @@
 @interface IDWP_Directory : NSObject
 
 @property (retain) NSString* path;
+@property (retain) NSMutableArray* fileList;
 
 - (id) init;
 - (void) dealloc;
 
 + (IDWP_Directory*) directory;
 - (NSMutableArray*) enumerateImageFiles: (NSString *) directoryPath;
+- (void) processImages;
 
 @end

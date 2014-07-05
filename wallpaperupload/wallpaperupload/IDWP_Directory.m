@@ -10,6 +10,8 @@
 
 @implementation IDWP_Directory
 
+@synthesize fileList;
+
 + (IDWP_Directory*) directory {
     return [[self alloc] init];
 }
@@ -47,14 +49,22 @@
         else if (! [isDirectory boolValue]) {
             // No error and it’s not a directory; do something with the file
             IDWP_File* aFile = [IDWP_File initializeWithPath: url];
-            [fileArray addObject:aFile];
+            if ([aFile isValidWallpaper])
+                [fileArray addObject:aFile];
         }
     }
     //[fileArray autorelease];
     NSLog(@"%lu", (unsigned long)[fileArray count]);
 
+    [self setFileList:fileArray];
     return fileArray;
 };
+
+- (void) processImages {
+    NSImage* image;
+    
+    
+}
 
 - (id) init {
     if (self = [super init] ) {

@@ -18,7 +18,9 @@
     IDWP_Directory * directory = [IDWP_Directory directory];
     NSMutableArray * files = [directory enumerateImageFiles:@"/Users/stephen/Pictures"];
     
-    id item;
+    [directory processImages];
+    
+    IDWP_File* item;
     
     for (item in files) {
         NSLog(@"%@", item);
