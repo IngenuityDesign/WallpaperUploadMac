@@ -10,4 +10,12 @@
 
 @interface IDWP_File : NSObject
 
+@property (
+           retain,
+           getter=getFilepath, setter=setFilepath:,
+           readwrite
+           ) NSURL* filepath;
+
++ (IDWP_File*) initializeWithPath: (NSURL*) filePath;
+
 @end

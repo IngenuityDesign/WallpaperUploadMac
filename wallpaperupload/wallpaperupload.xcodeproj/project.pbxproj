@@ -19,6 +19,7 @@
 		DCAA767119679DDC00887F05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCAA766F19679DDC00887F05 /* InfoPlist.strings */; };
 		DCAA767319679DDC00887F05 /* wallpaperuploadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA767219679DDC00887F05 /* wallpaperuploadTests.m */; };
 		DCAA767F19679EE800887F05 /* IDWP_File.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA767E19679EE800887F05 /* IDWP_File.m */; };
+		DCAA76821967A05C00887F05 /* IDWP_Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA76811967A05C00887F05 /* IDWP_Directory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		DCAA767219679DDC00887F05 /* wallpaperuploadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wallpaperuploadTests.m; sourceTree = "<group>"; };
 		DCAA767D19679EE800887F05 /* IDWP_File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDWP_File.h; sourceTree = "<group>"; };
 		DCAA767E19679EE800887F05 /* IDWP_File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_File.m; sourceTree = "<group>"; };
+		DCAA76801967A05C00887F05 /* IDWP_Directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDWP_Directory.h; sourceTree = "<group>"; };
+		DCAA76811967A05C00887F05 /* IDWP_Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_Directory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 			children = (
 				DCAA767D19679EE800887F05 /* IDWP_File.h */,
 				DCAA767E19679EE800887F05 /* IDWP_File.m */,
+				DCAA76801967A05C00887F05 /* IDWP_Directory.h */,
+				DCAA76811967A05C00887F05 /* IDWP_Directory.m */,
 			);
 			name = Filesystem;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				DCAA765C19679DDC00887F05 /* IDWP_AppDelegate.m in Sources */,
 				DCAA767F19679EE800887F05 /* IDWP_File.m in Sources */,
 				DCAA765519679DDC00887F05 /* main.m in Sources */,
+				DCAA76821967A05C00887F05 /* IDWP_Directory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

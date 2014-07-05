@@ -10,6 +10,21 @@
 
 @implementation IDWP_File
 
+@synthesize filepath;
 
++ (IDWP_File*) initializeWithPath: (id) filePath {
+    
+    IDWP_File* newInstance = [[self alloc] init];
+    [newInstance setFilepath:filePath];
+    return newInstance;
+    
+};
+
+- (id) init {
+    if ( self = [super init]) {
+    
+    }
+    return self;
+}
 
 @end
