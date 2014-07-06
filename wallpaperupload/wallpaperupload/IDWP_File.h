@@ -20,8 +20,8 @@
 @property NSString * year;
 @property NSString * type;
 @property NSString * subtype;
-@property NSString * width;
-@property NSString * height;
+@property NSNumber * width;
+@property NSNumber * height;
 
 @property NSString * filename;
 @property NSString * extension;

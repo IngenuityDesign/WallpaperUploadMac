@@ -90,13 +90,14 @@
             [self setMonth:[searchedString substringWithRange:[match rangeAtIndex:1]]];
             [self setYear:[searchedString substringWithRange:[match rangeAtIndex:2]]];
             
-            
             [self setType:[searchedString substringWithRange:[match rangeAtIndex:3]]];
             [self setSubtype:[searchedString substringWithRange:[match rangeAtIndex:4]]];
-             
-             
-            [self setWidth:[searchedString substringWithRange:[match rangeAtIndex:5]]];
-            [self setHeight:[searchedString substringWithRange:[match rangeAtIndex:6]]];
+            
+            int a = [[searchedString substringWithRange:[match rangeAtIndex:5]] intValue];
+            int b = [[searchedString substringWithRange:[match rangeAtIndex:6]] intValue];
+            
+            [self setWidth: [NSNumber numberWithInt:a]];
+            [self setHeight:[NSNumber numberWithInt:b]];
             
         } else {
             NSLog(@"File is not named properly");
