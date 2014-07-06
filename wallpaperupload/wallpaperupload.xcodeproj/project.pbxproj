@@ -20,6 +20,7 @@
 		DCAA767319679DDC00887F05 /* wallpaperuploadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA767219679DDC00887F05 /* wallpaperuploadTests.m */; };
 		DCAA767F19679EE800887F05 /* IDWP_File.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA767E19679EE800887F05 /* IDWP_File.m */; };
 		DCAA76821967A05C00887F05 /* IDWP_Directory.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA76811967A05C00887F05 /* IDWP_Directory.m */; };
+		DCDD99CC1968E6E0001C3B9C /* IDWP_ConfigurationFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDD99CB1968E6E0001C3B9C /* IDWP_ConfigurationFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		DCAA767E19679EE800887F05 /* IDWP_File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_File.m; sourceTree = "<group>"; };
 		DCAA76801967A05C00887F05 /* IDWP_Directory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDWP_Directory.h; sourceTree = "<group>"; };
 		DCAA76811967A05C00887F05 /* IDWP_Directory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_Directory.m; sourceTree = "<group>"; };
+		DCDD99CA1968E6E0001C3B9C /* IDWP_ConfigurationFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDWP_ConfigurationFile.h; sourceTree = "<group>"; };
+		DCDD99CB1968E6E0001C3B9C /* IDWP_ConfigurationFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_ConfigurationFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 				DCAA767E19679EE800887F05 /* IDWP_File.m */,
 				DCAA76801967A05C00887F05 /* IDWP_Directory.h */,
 				DCAA76811967A05C00887F05 /* IDWP_Directory.m */,
+				DCDD99CA1968E6E0001C3B9C /* IDWP_ConfigurationFile.h */,
+				DCDD99CB1968E6E0001C3B9C /* IDWP_ConfigurationFile.m */,
 			);
 			name = Filesystem;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				DCAA765C19679DDC00887F05 /* IDWP_AppDelegate.m in Sources */,
 				DCAA767F19679EE800887F05 /* IDWP_File.m in Sources */,
 				DCAA765519679DDC00887F05 /* main.m in Sources */,
+				DCDD99CC1968E6E0001C3B9C /* IDWP_ConfigurationFile.m in Sources */,
 				DCAA76821967A05C00887F05 /* IDWP_Directory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +493,7 @@
 				DCAA767819679DDC00887F05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCAA767919679DDC00887F05 /* Build configuration list for PBXNativeTarget "wallpaperuploadTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +502,7 @@
 				DCAA767B19679DDC00887F05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

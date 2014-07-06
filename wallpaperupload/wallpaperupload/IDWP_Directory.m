@@ -64,9 +64,28 @@
     NSMutableArray * processedFileArray = [[NSMutableArray alloc] init];
     
     IDWP_File* item;
+    NSMutableString* configurationValue = [[NSMutableString alloc] init];
+    NSMutableString* currentSize = [[NSMutableString alloc] init];
+
     
     for (item in [self fileList]) {
         [processedFileArray addObject:[item createSizedImage]];
+        //now we need to add something to the config file
+        configurationValue = [NSMutableString stringWithFormat:@"%@%@_%@.jpg",
+                              [item month],
+                              [item year],
+                              [item type]
+                              ];
+        
+        NSLog(configurationValue);
+        /**
+         * This needs to be stored in a JSON key value pair
+         * {"supports":["festive","cal","quote1","quote2"],"sizes":["1280x1024","1366x768","1920x1080","320x480","720x1280"],"guid":"July2014_blue.jpg","name":"Chill Out"}
+         * supports is static
+         */
+        
+        currentSize = [NSMutableString stringWithFormat:@"%@x%@", [item width], [item height]];
+        
     }
     
     /** Images are now properly sized and we have an array of the temporary file storage **/
