@@ -23,8 +23,13 @@
 @property NSNumber * width;
 @property NSNumber * height;
 
+@property BOOL nameHasBeenParsed;
+
 @property NSString * filename;
 @property NSString * extension;
+
+@property NSURL * imageURL;
+@property BOOL imageIsCreated;
 
 
 + (IDWP_File*) file;
@@ -33,5 +38,7 @@
 - (void) parseFilename;
 - (BOOL) isJPG;
 - (BOOL) isValidWallpaper;
+
+- (NSURL*) createSizedImage;
 
 @end

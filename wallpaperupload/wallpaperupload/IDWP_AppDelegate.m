@@ -20,12 +20,6 @@
     
     [directory processImages];
     
-    IDWP_File* item;
-    
-    for (item in files) {
-        NSLog(@"%@", item);
-    }
-    
 }
 
 @end

@@ -21,4 +21,6 @@
 - (NSMutableArray*) enumerateImageFiles: (NSString *) directoryPath;
 - (void) processImages;
 
+- (NSURL*) createConfigFile;
+
 @end

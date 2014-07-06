@@ -61,8 +61,15 @@
 };
 
 - (void) processImages {
-    NSImage* image;
+    NSMutableArray * processedFileArray = [[NSMutableArray alloc] init];
     
+    IDWP_File* item;
+    
+    for (item in [self fileList]) {
+        [processedFileArray addObject:[item createSizedImage]];
+    }
+    
+    /** Images are now properly sized and we have an array of the temporary file storage **/
     
 }
 
