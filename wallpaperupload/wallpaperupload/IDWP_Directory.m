@@ -66,7 +66,9 @@
     IDWP_File* item;
     NSMutableString* configurationValue = [[NSMutableString alloc] init];
     NSMutableString* currentSize = [[NSMutableString alloc] init];
-
+    [[self fileList] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+    }];
     
     for (item in [self fileList]) {
         [processedFileArray addObject:[item createSizedImage]];

@@ -14,12 +14,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    
+    
+}
+- (IBAction)submitWindowFormm:(id)sender {
+    
     // Insert code here to initialize your application
     IDWP_Directory * directory = [IDWP_Directory directory];
     NSMutableArray * files = [directory enumerateImageFiles:@"/Users/stephen/Pictures"];
     
     [directory processImages];
-    
 }
 
 @end
