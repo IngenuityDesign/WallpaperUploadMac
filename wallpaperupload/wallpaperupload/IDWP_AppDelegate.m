@@ -20,10 +20,33 @@
 - (IBAction)submitWindowFormm:(id)sender {
     
     // Insert code here to initialize your application
-    IDWP_Directory * directory = [IDWP_Directory directory];
-    NSMutableArray * files = [directory enumerateImageFiles:@"/Users/stephen/Pictures"];
     
-    [directory processImages];
+    // Create the File Open Dialog class.
+    NSOpenPanel* openDlg = [NSOpenPanel openPanel];
+    
+    // Enable the selection of files in the dialog.
+    [openDlg setCanChooseFiles:YES];
+    
+    // Enable the selection of directories in the dialog.
+    [openDlg setCanChooseDirectories:YES];
+    
+    // Display the dialog.  If the OK button was pressed,
+    // process the files.
+    if ( [openDlg runModalForDirectory:nil file:nil] == NSOKButton )
+    {
+        // Get an array containing the full filenames of all
+        // files and directories selected.
+        NSArray* files = [openDlg filenames];
+        
+        // Loop through all the files and process them.
+        NSString* fileName = [files objectAtIndex:0];
+        IDWP_Directory * directory = [IDWP_Directory directory];
+        NSMutableArray * foundFiles = [directory enumerateImageFiles:fileName];
+        [directory processImages];
+
+       
+    }
+    
 }
 
 @end
