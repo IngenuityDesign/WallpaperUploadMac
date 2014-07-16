@@ -7,6 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "IDWP_Directory.h"
+#import "IDWP_File.h"
+#import "IDWP_FTP_Uploader.h"
 
 @interface IDWP_AppDelegate : NSObject <NSApplicationDelegate>
 

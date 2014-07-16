@@ -7,9 +7,6 @@
 //
 
 #import "IDWP_AppDelegate.h"
-#import "IDWP_Directory.h"
-#import "IDWP_File.h"
-#import "IDWP_FTP_Uploader.h"
 
 @implementation IDWP_AppDelegate
 
