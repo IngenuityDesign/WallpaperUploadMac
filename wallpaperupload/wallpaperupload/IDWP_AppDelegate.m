@@ -12,16 +12,15 @@
 
 @implementation IDWP_AppDelegate
 
+@synthesize IDWP_FolderPathTextView;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     
     
 }
-- (IBAction)submitWindowFormm:(id)sender {
+- (IBAction)openBrowsingWindow:(id)sender {
     
-    // Insert code here to initialize your application
-    
-    // Create the File Open Dialog class.
     NSOpenPanel* openDlg = [NSOpenPanel openPanel];
     
     // Enable the selection of files in the dialog.
@@ -40,11 +39,26 @@
         
         // Loop through all the files and process them.
         NSString* fileName = [files objectAtIndex:0];
+        [IDWP_FolderPathTextView setStringValue:fileName];
+        
+    }
+    
+}
+- (IBAction)onTextFieldClick:(id)sender {
+    
+    
+}
+- (IBAction)submitWindowFormm:(id)sender {
+    
+    // Loop through all the files and process them.
+    NSString* fileName = [IDWP_FolderPathTextView stringValue];
+    
+    if (fileName != nil) {
         IDWP_Directory * directory = [IDWP_Directory directory];
         NSMutableArray * foundFiles = [directory enumerateImageFiles:fileName];
         [directory processImages];
-
-       
+    } else {
+        
     }
     
 }

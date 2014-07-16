@@ -11,5 +11,6 @@
 @interface IDWP_AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (retain) IBOutlet NSTextField* IDWP_FolderPathTextView;
 
 @end
