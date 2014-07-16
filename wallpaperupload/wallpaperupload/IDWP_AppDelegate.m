@@ -9,13 +9,33 @@
 #import "IDWP_AppDelegate.h"
 #import "IDWP_Directory.h"
 #import "IDWP_File.h"
+#import "IDWP_FTP_Uploader.h"
 
 @implementation IDWP_AppDelegate
 
 @synthesize IDWP_FolderPathTextView;
 
+//ftp stuff
+@synthesize IDWP_FTPHostname;
+@synthesize IDWP_FTPPassword;
+@synthesize IDWP_FTPUser;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    
+    
+}
+- (IBAction)onClickUploadButton:(id)sender {
+    
+    NSString* username = [IDWP_FTPUser stringValue];
+    NSString* password = [IDWP_FTPPassword stringValue];
+    NSString* hostname = [IDWP_FTPHostname stringValue];
+    
+    IDWP_FTP_Uploader* uploader = [IDWP_FTP_Uploader initWithConnectionStrings:hostname
+                                                             username:username
+                                                             password:password];
+    
+    [uploader open];
     
     
 }
@@ -44,10 +64,9 @@
     }
     
 }
-- (IBAction)onTextFieldClick:(id)sender {
-    
-    
-}
+
+
+
 - (IBAction)submitWindowFormm:(id)sender {
     
     // Loop through all the files and process them.
@@ -57,6 +76,12 @@
         IDWP_Directory * directory = [IDWP_Directory directory];
         NSMutableArray * foundFiles = [directory enumerateImageFiles:fileName];
         [directory processImages];
+        
+        CFReadStreamRef CFReadStreamCreateWithFTPURL (
+          CFAllocatorRef alloc,
+          CFURLRef ftpURL
+        );
+        
     } else {
         
     }

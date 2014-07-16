@@ -13,4 +13,11 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (retain) IBOutlet NSTextField* IDWP_FolderPathTextView;
 
+//FTP Fields
+
+@property (retain) IBOutlet NSTextField* IDWP_FTPHostname;
+@property (retain) IBOutlet NSTextField* IDWP_FTPUser;
+@property (retain) IBOutlet NSSecureTextField* IDWP_FTPPassword;
+
+
 @end

@@ -80,6 +80,7 @@
                               ];
         
         NSLog(configurationValue);
+        
         /**
          * This needs to be stored in a JSON key value pair
          * {"supports":["festive","cal","quote1","quote2"],"sizes":["1280x1024","1366x768","1920x1080","320x480","720x1280"],"guid":"July2014_blue.jpg","name":"Chill Out"}

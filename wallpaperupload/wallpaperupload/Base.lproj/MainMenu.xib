@@ -14,6 +14,9 @@
         <viewController id="nnB-NA-zYv"/>
         <customObject id="Voe-Tx-rLC" customClass="IDWP_AppDelegate">
             <connections>
+                <outlet property="IDWP_FTPHostname" destination="Pr5-Vl-7bV" id="r48-eA-w09"/>
+                <outlet property="IDWP_FTPPassword" destination="DT2-h9-MBJ" id="3SV-NE-1oh"/>
+                <outlet property="IDWP_FTPUser" destination="q2b-Ii-EeC" id="40x-K5-7UN"/>
                 <outlet property="IDWP_FolderPathTextView" destination="cRG-5s-AKY" id="wNn-9S-UPv"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -705,9 +708,6 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
-                        <connections>
-                            <action selector="onTextFieldClick:" target="Voe-Tx-rLC" id="bPX-jr-3d2"/>
-                        </connections>
                     </textField>
                     <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b5f-5J-isz">
                         <rect key="frame" x="435" y="309" width="29" height="26"/>
@@ -808,6 +808,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="onClickUploadButton:" target="Voe-Tx-rLC" id="mCe-gh-L08"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

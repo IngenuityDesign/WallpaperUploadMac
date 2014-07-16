@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC47531A1975F991005D6DE7 /* IDWP_FTP_Uploader.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4753191975F991005D6DE7 /* IDWP_FTP_Uploader.m */; };
+		DC47531F19760FDF005D6DE7 /* IDWP_FTP_Error.m in Sources */ = {isa = PBXBuildFile; fileRef = DC47531E19760FDF005D6DE7 /* IDWP_FTP_Error.m */; };
 		DCAA764919679DDC00887F05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAA764819679DDC00887F05 /* Cocoa.framework */; };
 		DCAA765319679DDC00887F05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCAA765119679DDC00887F05 /* InfoPlist.strings */; };
 		DCAA765519679DDC00887F05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA765419679DDC00887F05 /* main.m */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC4753181975F991005D6DE7 /* IDWP_FTP_Uploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDWP_FTP_Uploader.h; sourceTree = "<group>"; };
+		DC4753191975F991005D6DE7 /* IDWP_FTP_Uploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_FTP_Uploader.m; sourceTree = "<group>"; };
+		DC47531D19760FDF005D6DE7 /* IDWP_FTP_Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDWP_FTP_Error.h; sourceTree = "<group>"; };
+		DC47531E19760FDF005D6DE7 /* IDWP_FTP_Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDWP_FTP_Error.m; sourceTree = "<group>"; };
 		DCAA764519679DDC00887F05 /* wallpaperupload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallpaperupload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAA764819679DDC00887F05 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DCAA764B19679DDC00887F05 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -173,6 +179,10 @@
 				DCAA76811967A05C00887F05 /* IDWP_Directory.m */,
 				DCDD99CA1968E6E0001C3B9C /* IDWP_ConfigurationFile.h */,
 				DCDD99CB1968E6E0001C3B9C /* IDWP_ConfigurationFile.m */,
+				DC4753181975F991005D6DE7 /* IDWP_FTP_Uploader.h */,
+				DC4753191975F991005D6DE7 /* IDWP_FTP_Uploader.m */,
+				DC47531D19760FDF005D6DE7 /* IDWP_FTP_Error.h */,
+				DC47531E19760FDF005D6DE7 /* IDWP_FTP_Error.m */,
 			);
 			name = Filesystem;
 			sourceTree = "<group>";
@@ -276,10 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC47531A1975F991005D6DE7 /* IDWP_FTP_Uploader.m in Sources */,
 				DCAA765C19679DDC00887F05 /* IDWP_AppDelegate.m in Sources */,
 				DCAA767F19679EE800887F05 /* IDWP_File.m in Sources */,
 				DCAA765519679DDC00887F05 /* main.m in Sources */,
 				DCDD99CC1968E6E0001C3B9C /* IDWP_ConfigurationFile.m in Sources */,
+				DC47531F19760FDF005D6DE7 /* IDWP_FTP_Error.m in Sources */,
 				DCAA76821967A05C00887F05 /* IDWP_Directory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
