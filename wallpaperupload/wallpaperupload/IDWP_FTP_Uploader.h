@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IDWP_FTP_Error.h"
 
 @interface IDWP_FTP_Uploader : NSObject
 
@@ -24,5 +25,6 @@
 - (BOOL) checkStreamIsOpen;
 - (BOOL) streamIsOpening;
 - (void) onStreamOpen;
+- (IDWP_FTP_Error*) errorFromCFStreamError:(CFErrorRef) error;
 
 @end

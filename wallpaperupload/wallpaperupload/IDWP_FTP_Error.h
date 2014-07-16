@@ -10,11 +10,14 @@
 
 @interface IDWP_FTP_Error : NSObject
 
-@property CFStreamError error;
-- (NSString *)description;
+@property CFErrorRef error;
 
+- (NSString *)toErrorMessage;
+- (NSInteger) getErrno;
 
-+ (IDWP_FTP_Error*) initWithError:(CFStreamError) error;
++ (IDWP_FTP_Error*) initWithError:(CFErrorRef) error;
 - (id) init;
+
+- (NSNumber*) getStatusCode;
 
 @end

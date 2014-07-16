@@ -19,29 +19,32 @@
     return self;
 }
 
-+ (IDWP_FTP_Error*) initWithError:(CFStreamError) error {
++ (IDWP_FTP_Error*) initWithError:(CFErrorRef) error {
     IDWP_FTP_Error *x = [[self alloc] init];
     [x setError:error];
     return x;
 }
 
-- (void) getOSError {
-    if ([self error].domain == kCFStreamErrorDomainPOSIX) {
-        // Interpret myErr.error as a UNIX errno.
-        
-    } else if ([self error].domain == kCFStreamErrorDomainMacOSStatus) {
-        // Interpret myErr.error as a MacOS error code.
-        OSStatus macError = (OSStatus)[self error].error;
-        
-        // Check other error domains.
-    }
-
+- (NSInteger) getErrno {
+    
+    CFIndex i = CFErrorGetCode([self error]);
+    return i;
+    
 }
 
-- (NSString*) description {
-    [self getOSError];
-    return @"";
-    
+- (NSString*) toErrorMessage {
+    NSLog(@"Error code: %ld", (long)[[self getStatusCode] integerValue] );
+    return CFBridgingRelease(CFErrorCopyDescription([self error]));
+}
+
+-(NSNumber*)getStatusCode {
+    CFDictionaryRef dict = CFErrorCopyUserInfo([self error]);
+    if (CFDictionaryContainsKey(dict, kCFFTPStatusCodeKey)) {
+        CFStringRef x = CFDictionaryGetValue(dict, kCFFTPStatusCodeKey);
+        NSString* statusCodeString = ((__bridge NSString*)(x));
+        return [NSNumber numberWithInt:[statusCodeString integerValue]];
+    }
+    return [NSNumber numberWithInt:0];
 }
 
 @end

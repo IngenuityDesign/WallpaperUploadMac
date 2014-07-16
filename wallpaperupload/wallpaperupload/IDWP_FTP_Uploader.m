@@ -7,7 +7,6 @@
 //
 
 #import "IDWP_FTP_Uploader.h"
-#import "IDWP_FTP_Error.h"
 
 
 @implementation IDWP_FTP_Uploader
@@ -29,6 +28,7 @@
            username: (NSString*)username
            password: (NSString*)password {
     
+    
     CFStringRef hostnameCFString = (__bridge CFStringRef) hostname;
     CFStringRef usernameCFString = (__bridge CFStringRef) username;
     CFStringRef passwordCFString = (__bridge CFStringRef) password;
@@ -37,9 +37,13 @@
     
     CFWriteStreamRef FTPConnection = CFWriteStreamCreateWithFTPURL (NULL, url);
     
-    CFWriteStreamSetProperty(FTPConnection, kCFStreamPropertyFTPUserName, usernameCFString);
     CFWriteStreamSetProperty(FTPConnection, kCFStreamPropertyFTPUsePassiveMode, kCFBooleanTrue);
-    CFWriteStreamSetProperty(FTPConnection, kCFStreamPropertyFTPPassword, passwordCFString);
+
+    //CFWriteStreamSetProperty(FTPConnection, kCFStreamPropertyFTPUserName, usernameCFString);
+    //CFWriteStreamSetProperty(FTPConnection, kCFStreamPropertyFTPPassword, passwordCFString);
+    
+    //CFWriteStreamSetProperty(FTPConnection, kCFStreamPropertyFTPAttemptPersistentConnection, kCFBooleanTrue);
+    //CFWriteStreamSetProperty(FTPConnection, kCFStreamPropertyFTPFetchResourceInfo, kCFBooleanTrue);
     
     IDWP_FTP_Uploader* instance = [[self alloc] init];
     
@@ -103,7 +107,7 @@
 
 }
 
-- (IDWP_FTP_Error*) errorFromCFStreamError:(CFStreamError) error {
+- (IDWP_FTP_Error*) errorFromCFStreamError:(CFErrorRef) error {
     return [IDWP_FTP_Error initWithError:error];
 }
 
@@ -125,8 +129,9 @@ void static MyCallBack (CFWriteStreamRef stream,CFStreamEventType eventType,void
         case kCFStreamEventErrorOccurred:
         {
             NSLog(@"in CallBack: kCFStreamEventErrorOccurred");
-            CFStreamError error = CFWriteStreamGetError(stream);
-            NSLog([self errorFromCFStreamError:error]);
+            CFErrorRef error = CFWriteStreamCopyError(stream);
+            IDWP_FTP_Error* parsedError = [self errorFromCFStreamError:error];
+            NSLog([parsedError toErrorMessage]);
             //NSLog(@"%d",[[self errorFromCFStreamError:error] code] );
             break;
             
